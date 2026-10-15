@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iniciar Sesion - SINEPOLIS</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                background-color: #f4f9f4;
+            }
+
+            header {
+                background-color: #2e7d32;
+                padding: 30px;
+                text-align: center;
+                color: white;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 35px;
+            }
+
+            header h2 {
+                margin: 10px 0 0 0;
+                font-size: 18px;
+                font-weight: normal;
+            }
+
+            nav {
+                background-color: #388e3c;
+                padding: 10px;
+                text-align: center;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: inline-block;
+            }
+
+            .contenedor-login {
+                width: 400px;
+                margin: 40px auto;
+                text-align: left;
+            }
+
+            .contenedor-login h2 {
+                color: #2e7d32;
+                text-align: center;
+            }
+
+            .contenedor-login label {
+                display: block;
+                margin-top: 15px;
+                font-weight: bold;
+            }
+
+            .contenedor-login input {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+            }
+
+            .btn-enviar {
+                background-color: #2e7d32;
+                color: white;
+                border: none;
+                padding: 10px;
+                width: 100%;
+                margin-top: 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            .enlace-registro {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .enlace-registro a {
+                color: #2e7d32;
+                font-weight: bold;
+            }
+
+            footer {
+                background-color: #1b5e20;
+                padding: 15px;
+                text-align: center;
+                color: white;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>SINEPOLIS</h1>
+            <h2>LAS MEJORES PELICULAS DEL MUNDO</h2>
+        </header>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Proximos Estrenos</a>
+            <a href="login.html">Tarjeta Cine</a>
+        </nav>
+
+        <div class="contenedor-login">
+            <h2>Iniciar Sesion</h2>
+
+            <form action="index.html" method="GET">
+                <label for="correo">Correo Electronico:</label>
+                <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="btn-enviar">Ingresar</button>
+            </form>
+
+            <div class="enlace-registro">
+                <p>¿No tienes cuenta? <a href="registro.html">Crear cuenta aquí</a></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Sinepolis todos los derechos reservados</p>
+            <p>Sandoval Lugo Javier</p>
+            <p>24308051280661</p>
+            <p>5ºI</p>
+        </footer>
+
+    </body>
+</html>

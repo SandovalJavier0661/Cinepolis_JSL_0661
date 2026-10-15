@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Happy Together - SINEPOLIS</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                background-color: #f4f9f4;
+            }
+
+            header {
+                background-color: #2e7d32;
+                padding: 30px;
+                text-align: center;
+                color: white;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 35px;
+            }
+
+            header h2 {
+                margin: 10px 0 0 0;
+                font-size: 18px;
+                font-weight: normal;
+            }
+
+            nav {
+                background-color: #388e3c;
+                padding: 10px;
+                text-align: center;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: inline-block;
+            }
+
+            .contenedor-pelicula {
+                width: 850px;
+                margin: 30px auto;
+            }
+
+            .columna-imagen {
+                display: inline-block;
+                width: 300px;
+                vertical-align: top;
+            }
+
+            .columna-imagen img {
+                width: 100%;
+                height: 420px;
+            }
+
+            .columna-detalles {
+                display: inline-block;
+                width: 500px;
+                vertical-align: top;
+                margin-left: 30px;
+            }
+
+            .columna-detalles h2 {
+                margin-top: 0;
+                color: #2e7d32;
+            }
+
+            .columna-detalles label {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            .columna-detalles select, 
+            .columna-detalles input {
+                width: 100%;
+                padding: 5px;
+                margin-top: 5px;
+            }
+
+            .btn-enviar {
+                background-color: #2e7d32;
+                color: white;
+                border: none;
+                padding: 10px;
+                width: 100%;
+                margin-top: 15px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            footer {
+                background-color: #1b5e20;
+                padding: 15px;
+                text-align: center;
+                color: white;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <h1>SINEPOLIS</h1>
+            <h2>LAS MEJORES PELICULAS DEL MUNDO</h2>
+        </header>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Proximos Estrenos</a>
+            <a href="login.html">Tarjeta Cine</a>
+        </nav>
+
+        <div class="contenedor-pelicula">
+            
+            <div class="columna-imagen">
+                <img src="happytogether.jpg" alt="Poster Happy Together">
+            </div>
+
+            <div class="columna-detalles">
+                <h2>Happy Together</h2>
+                <p><b>Director:</b> Wong Kar-wai</p>
+                <p><b>Año:</b> 1997</p>
+                <p><b>Sinopsis:</b> Yiu-Fai y Po-Wing viajan desde Hong Kong hacia Argentina en busca de una nueva oportunidad para su turbulenta relación, enfrentando la soledad, el desamor y la búsqueda de identidad lejos de casa.</p>
+                
+                <hr>
+
+                <form action="login.html" method="GET">
+                    
+                    <label for="cine">Selecciona el Cine:</label>
+                    <select id="cine" name="cine">
+                        <option value="patio">Sinépolis Gran Patio</option>
+                        <option value="misiones">Sinépolis Las Misiones</option>
+                        <option value="torres">Sinépolis Las Torres</option>
+                    </select>
+
+                    <label for="horario">Selecciona el Horario:</label>
+                    <select id="horario" name="horario">
+                        <option value="14:00">14:00 hrs</option>
+                        <option value="16:30">16:30 hrs</option>
+                        <option value="19:00">19:00 hrs</option>
+                        <option value="21:15">21:15 hrs</option>
+                        <option value="23:30">23:30 hrs</option>
+                    </select>
+
+                    <label for="asientos">Cantidad de Asientos:</label>
+                    <input type="number" id="asientos" name="asientos" min="1" max="10" value="1">
+
+                    <button type="submit" class="btn-enviar">Comprar Boletos</button>
+
+                </form>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Sinepolis todos los derechos reservados</p>
+            <p>Sandoval Lugo Javier</p>
+            <p>24308051280661</p>
+            <p>5ºI</p>
+        </footer>
+
+    </body>
+</html>
